@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List|Order Form</title>
+</head>
+<body>
+    <section>
+    <center>
+        <h1> Product Information </h1>
+        <?php 
+        include 'db.php'
+
+        $sql = "SELECT * FROM products"; 
+        $result = $conn->query($sql);
+        if($result->$num_rows>0){
+            while($row = $result-> fetch_assoc()){
+                echo "<tr>
+                    <th>{$row['product_id']}</th>
+                    <th>{$row['product_name']}</th>
+                    <th>{$row['price']}</th>
+                    <th>{$row['stocks']}</th>
+                    
+                </tr>";
+            } else {
+                echo "<tr><th colspan="5">No records found.</th></tr>";
+            }
+        }
+        ?>
+    </center>
+    </section>
+
+    <section>
+        <form>
+            
+        </form>
+    </section>
+</body>
+</html>

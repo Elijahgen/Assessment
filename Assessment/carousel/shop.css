@@ -1,0 +1,143 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    margin: 0%;
+}
+.nav {
+    display: flex;  
+    align-items: center;   
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav a {
+    color: rgb(0, 0, 0);  
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+input[type="search"]{
+       padding: 8px 12px; 
+       border: none;
+       width: 250px;
+       background-color: transparent;
+       color: rgb(255, 255, 255);
+       border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+.nav button {
+    margin: auto;
+    margin-left: 5px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+}
+
+.prof{
+    width: 40px  ;
+    border-radius: 50px;
+}
+
+.cart {
+    height: 40px;
+    border-radius: 50px;
+    filter: invert();
+}
+P{
+    background-color: rgba(0, 0, 0, 0.559);
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto; 
+    padding: 20px;
+}
+
+.product-card {
+    width:100%;
+    margin: auto;
+    background:#fff; 
+    border-radius:12px; 
+    box-shadow:0 0 15px rgba(0, 0, 0, 0.82); 
+    padding:20px;
+}
+.product-img-holder {
+    height:200px; 
+}
+
+.product-img-holder img { 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+}
+
+@media(max-width:500px){ 
+    .product-img-holder{ 
+        height:160px; 
+    } 
+}
+
+.label-box { 
+    margin-bottom:5px; 
+    font-size:14px;
+}
+
+.btn-group button { 
+    padding:8px 12px; 
+    border:none; 
+    border-radius:15px; 
+    cursor:pointer; 
+    font-size:14px; 
+    margin-right:5px; 
+}
+
+button.add { 
+    background:brown; 
+    color:white; 
+} 
+
+button.add:hover{
+    background:green;
+}
+
+button.buy { 
+    background:orange; 
+    color:white; 
+}
+
+button.buy:hover{
+    background:darkorange;
+}
+
+.footer { 
+    margin-top:30px; 
+    font-size:15px; 
+    padding:10px 15px; 
+    color:black; 
+}
+
+/*DESIGN*/
+hr{
+        border: 1px solid rgb(71, 52, 17);
+        width: 70%;
+        align-items:center;
+    }
